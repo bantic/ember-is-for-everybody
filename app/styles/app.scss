@@ -3,9 +3,10 @@ $bg-color: #FFF9E7;
 $header-height: 100px;
 $footer-height: 100px;
 
-html, body {
+body {
   background-color: $bg-color;
   margin: $header-height 0 $footer-height 0;
+  font-size: 24px;
 }
 
 @mixin vollkorn {
@@ -46,10 +47,8 @@ h1 {
 }
 
 .container {
+  text-align: center;
   @include center-horiz($page-width);
   border: 1px solid black;
   margin: 0 auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }

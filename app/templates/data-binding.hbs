@@ -1,0 +1,26 @@
+<h2>Data Binding</h2>
+
+<p>
+{{input value=name placeholder="Enter your name"}}
+{{input type='checkbox' checked=showMany}}
+</p>
+
+{{#if name}}
+<p>
+  Your name is: {{name}}
+</p>
+{{/if}}
+
+{{#if showMany}}
+  {{#if name}}
+    <p>
+      Repeating just in case I forget:
+      <ul>
+        <li>Your name is: {{name}}</li>
+        <li>Your name is: {{name}}</li>
+        <li>Your name is: {{name}}</li>
+        <li>Your name is: {{name}}</li>
+      </ul>
+    </p>
+  {{/if}}
+{{/if}}
