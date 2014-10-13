@@ -9,6 +9,10 @@ Router.map(function() {
   this.route('data-binding');
   this.route('computed-properties');
   this.route('cp-setters');
+  this.route('routing-examples');
+  this.route('bad');
+  this.route('slow');
+  this.route('qp-demo');
 });
 
 export default Router;
