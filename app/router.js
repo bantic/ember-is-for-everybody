@@ -7,6 +7,7 @@ var Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('data-binding');
+  this.route('computed-properties');
 });
 
 export default Router;
