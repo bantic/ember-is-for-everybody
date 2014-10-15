@@ -16,7 +16,8 @@ test('visiting /', function() {
   visit('/');
 
   andThen(function() {
-    equal(find('h1:contains(Ember Is For Everybody)').length,
+    var h1 = find('h1:contains(Ember Is For Everybody)');
+    equal(h1.length,
           1,
           'has title');
 
